@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:pathData="M12,12h84v84h-84z"/>
+
+    <!-- Stylized M logo -->
+    <path
+        android:fillColor="#2D2F39"
+        android:pathData="M24,78 L24,30 L36,54 L48,30 L60,54 L72,30 L72,78 L63,78 L63,52 L60,58 L48,34 L36,58 L33,52 L33,78 Z"/>
+</vector>
