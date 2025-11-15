@@ -34,7 +34,7 @@ Build a release App Bundle (AAB) locally:
      Then run `:app:bundleRelease` to produce a signed AAB.
 
 CI build (GitHub Actions):
-- A workflow is provided at `.github/workflows/android_build_aab.yml` triggered on pushes to `master` or via manual dispatch. It uploads `app-release.aab` as an artifact.
+- A workflow is provided at `.github/workflows/android_build_aab.yml` triggered on pushes to `main` or via manual dispatch. It uploads `app-release.aab` as an artifact.
 - By default this artifact is unsigned. To enable signing in CI, add repository secrets for the keystore and wire them as Gradle properties.
 
 Notes:
