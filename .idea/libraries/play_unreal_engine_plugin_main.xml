@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="play-unreal-engine-plugin-main">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/play-unreal-engine-plugin-main.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

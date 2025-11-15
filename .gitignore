@@ -1,0 +1,30 @@
+# General
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+**/build/
+
+# Android Studio local config
+local.properties
+
+# Keystores and secrets
+*.jks
+*.keystore
+**/keystore.properties
+
+# Qodana artifacts
+qodana.sarif.json
+.qodana/**
+
+# CI artifacts
+*.aab
+*.apk
+
+# Misc generated images/logs
+/generated_image_*.png

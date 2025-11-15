@@ -2,9 +2,12 @@ package com.matmop.app
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+
+private const val TAG = "GalleryActivity"
 
 data class GalleryItem(val name: String, val type: String)
 
@@ -20,13 +23,19 @@ class GalleryActivity : AppCompatActivity() {
         try {
             val images = assets.list("images") ?: arrayOf()
             for (img in images) items.add(GalleryItem(img, "image"))
-        } catch (e: Exception) { /* ignore missing folder */ }
+        } catch (e: Exception) {
+            // Ignore if folder does not exist but log for diagnostics
+            Log.w(TAG, "No images folder found in assets", e)
+        }
 
         // list pdfs
         try {
             val pdfs = assets.list("pdfs") ?: arrayOf()
             for (pdf in pdfs) items.add(GalleryItem(pdf, "pdf"))
-        } catch (e: Exception) { /* ignore missing folder */ }
+        } catch (e: Exception) {
+            // Ignore if folder does not exist but log for diagnostics
+            Log.w(TAG, "No pdfs folder found in assets", e)
+        }
 
         if (items.isEmpty()) {
             items.add(GalleryItem("No gallery assets found. Copy images to assets/images and PDFs to assets/pdfs.", "info"))
