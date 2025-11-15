@@ -1,0 +1,2 @@
+rootProject.name = "MATMOP"
+include ":app"

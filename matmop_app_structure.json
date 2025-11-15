@@ -1,0 +1,504 @@
+{
+  "app_name": "MATMOP",
+  "tagline": "AI-Powered Freelance Work Platform",
+  "version": "1.0.0",
+  "target_platforms": [
+    "Android (Google Play)",
+    "iOS (App Store)"
+  ],
+  "screens": [
+    {
+      "name": "Splash Screen",
+      "description": "App logo with tagline animation",
+      "duration": "2 seconds",
+      "elements": [
+        "MATMOP logo",
+        "Tagline: 'Your AI Team for Financial Freedom'"
+      ]
+    },
+    {
+      "name": "Onboarding (First Launch)",
+      "slides": [
+        {
+          "title": "Welcome to MATMOP",
+          "description": "Collaborate with AI agents to complete freelance work",
+          "illustration": "Human + AI collaboration"
+        },
+        {
+          "title": "AI Does the Work",
+          "description": "Specialized AI agents handle task execution across multiple domains",
+          "illustration": "Multiple AI agents working"
+        },
+        {
+          "title": "You Ensure Quality",
+          "description": "Review, verify, and approve work before client delivery",
+          "illustration": "Quality control checklist"
+        },
+        {
+          "title": "Get Certified, Earn More",
+          "description": "Advance through 3 certification levels to unlock higher-paying jobs",
+          "illustration": "Level badges and money"
+        }
+      ]
+    },
+    {
+      "name": "Login/Signup Screen",
+      "elements": [
+        "Email input",
+        "Password input",
+        "Sign In button",
+        "Sign Up button",
+        "Google Sign In",
+        "LinkedIn Sign In",
+        "Forgot Password link"
+      ]
+    },
+    {
+      "name": "Home Dashboard",
+      "sections": [
+        {
+          "name": "Header",
+          "elements": [
+            "User avatar",
+            "Certification level badge",
+            "Notification bell"
+          ]
+        },
+        {
+          "name": "Stats Cards",
+          "cards": [
+            {
+              "label": "Active Jobs",
+              "value": "3",
+              "color": "blue"
+            },
+            {
+              "label": "This Month",
+              "value": "$2,847",
+              "color": "green"
+            },
+            {
+              "label": "Total Earned",
+              "value": "$18,392",
+              "color": "purple"
+            }
+          ]
+        },
+        {
+          "name": "Quick Actions",
+          "buttons": [
+            "Find New Jobs",
+            "View Active Work",
+            "Check Training Modules"
+          ]
+        },
+        {
+          "name": "AI Agent Status",
+          "display": "Central Agent: Active | 4 Specialized Agents Ready"
+        },
+        {
+          "name": "Recent Activity Feed",
+          "items": [
+            "Job #1247 submitted to client - Pending approval",
+            "New job available: Logo Design - $450",
+            "Payment received: $320 for Job #1243"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Certification Center",
+      "sections": [
+        {
+          "name": "Current Level Card",
+          "displays": [
+            "Level badge",
+            "Progress bar",
+            "Modules completed",
+            "Next level requirements"
+          ]
+        },
+        {
+          "name": "Level 1 (Free)",
+          "modules": [
+            "Introduction to MATMOP",
+            "Understanding AI Agents",
+            "Basic Quality Control",
+            "Client Communication Basics",
+            "Platform Overview"
+          ],
+          "test": "Level 1 Certification Test (20 questions)",
+          "unlocks": "Access to basic freelance platforms"
+        },
+        {
+          "name": "Level 2 ($99/year)",
+          "modules": [
+            "Advanced Quality Assurance",
+            "Multi-Agent Coordination",
+            "Industry-Specific Standards",
+            "Advanced Client Management",
+            "Risk Management"
+          ],
+          "test": "Level 2 Certification Test (40 questions + practical)",
+          "unlocks": "Mid-tier jobs ($100-$500), Priority support"
+        },
+        {
+          "name": "Level 3 ($199/year)",
+          "modules": [
+            "Expert Oversight Techniques",
+            "Complex Project Management",
+            "Advanced AI Prompt Engineering",
+            "Legal & Compliance",
+            "Business Strategy"
+          ],
+          "test": "Level 3 Master Test (60 questions + case studies)",
+          "unlocks": "Premium jobs ($500+), Custom AI training, Analytics dashboard"
+        }
+      ]
+    },
+    {
+      "name": "Job Marketplace",
+      "filters": [
+        "Platform (Upwork, Fiverr, Freelancer)",
+        "Category (Design, Writing, Development, Marketing, etc.)",
+        "Budget Range",
+        "Deadline",
+        "Difficulty Level",
+        "Certification Required"
+      ],
+      "job_card": {
+        "elements": [
+          "Job title",
+          "Client rating",
+          "Budget amount",
+          "Deadline",
+          "Category tags",
+          "Match score (AI compatibility)",
+          "Apply button"
+        ]
+      },
+      "sorting": [
+        "Best Match",
+        "Highest Pay",
+        "Soonest Deadline",
+        "Newest"
+      ]
+    },
+    {
+      "name": "Job Details",
+      "sections": [
+        {
+          "name": "Job Overview",
+          "content": "Title, description, requirements"
+        },
+        {
+          "name": "Client Info",
+          "content": "Name, rating, reviews, payment history"
+        },
+        {
+          "name": "Budget & Timeline",
+          "content": "Amount, deadline, milestones"
+        },
+        {
+          "name": "AI Analysis",
+          "content": "Compatibility score, recommended agents, estimated completion time"
+        },
+        {
+          "name": "Required Skills",
+          "content": "List of skills needed"
+        },
+        {
+          "name": "Action Buttons",
+          "buttons": [
+            "Accept Job",
+            "Decline",
+            "Ask Question"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Active Work View",
+      "tabs": [
+        "In Progress",
+        "Review Queue",
+        "Submitted",
+        "Completed"
+      ],
+      "job_progress_card": {
+        "elements": [
+          "Job title",
+          "Progress bar with stages",
+          "Assigned AI agents list",
+          "Current stage indicator",
+          "Time remaining",
+          "View Details button"
+        ],
+        "stages": [
+          "Analysis & Planning",
+          "AI Execution",
+          "Quality Review",
+          "Client Submission",
+          "Payment Collection"
+        ]
+      }
+    },
+    {
+      "name": "AI Agent Management",
+      "sections": [
+        {
+          "name": "Central Agent",
+          "display": "Status, current jobs managed, performance metrics"
+        },
+        {
+          "name": "Specialized Agents",
+          "agent_types": [
+            {
+              "name": "Content Writer",
+              "specialty": "Articles, blogs, copy",
+              "status": "Active"
+            },
+            {
+              "name": "Designer",
+              "specialty": "Graphics, logos, layouts",
+              "status": "Active"
+            },
+            {
+              "name": "Developer",
+              "specialty": "Web, mobile, scripts",
+              "status": "Active"
+            },
+            {
+              "name": "Marketer",
+              "specialty": "SEO, ads, strategy",
+              "status": "Active"
+            },
+            {
+              "name": "Data Analyst",
+              "specialty": "Research, reports",
+              "status": "Idle"
+            }
+          ]
+        },
+        {
+          "name": "Agent Performance",
+          "metrics": [
+            "Tasks completed",
+            "Success rate",
+            "Average quality score"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quality Review Screen",
+      "sections": [
+        {
+          "name": "Original Request",
+          "display": "Client's original job description and requirements"
+        },
+        {
+          "name": "AI-Generated Work",
+          "display": "Preview of completed work with full view option"
+        },
+        {
+          "name": "Quality Checklist",
+          "items": [
+            "Matches client requirements",
+            "No factual errors or hallucinations",
+            "Appropriate tone and style",
+            "Complete deliverables",
+            "Professional quality"
+          ]
+        },
+        {
+          "name": "AI Drift Detection",
+          "display": "Automated analysis highlighting any deviations from original request"
+        },
+        {
+          "name": "Actions",
+          "buttons": [
+            "Approve & Submit",
+            "Request Revision (send back to AI)",
+            "Manual Edit",
+            "Reject & Restart"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Earnings & Payments",
+      "sections": [
+        {
+          "name": "Balance Summary",
+          "displays": [
+            "Available balance",
+            "Pending payments",
+            "Total lifetime earnings"
+          ]
+        },
+        {
+          "name": "Earnings Chart",
+          "type": "Line graph showing daily/weekly/monthly earnings"
+        },
+        {
+          "name": "Transaction History",
+          "columns": [
+            "Date",
+            "Job ID",
+            "Amount",
+            "Platform Fee (10%)",
+            "Net Earnings",
+            "Status"
+          ]
+        },
+        {
+          "name": "Withdrawal",
+          "options": [
+            "Bank transfer",
+            "PayPal",
+            "Stripe",
+            "Cryptocurrency"
+          ],
+          "minimum": "$50"
+        }
+      ]
+    },
+    {
+      "name": "Learning Center",
+      "sections": [
+        {
+          "name": "Training Modules",
+          "display": "List of modules with progress, duration, and completion status"
+        },
+        {
+          "name": "Module Content",
+          "types": [
+            "Video lessons",
+            "Interactive quizzes",
+            "Reading materials",
+            "Practice exercises"
+          ]
+        },
+        {
+          "name": "Practice Zone",
+          "description": "Simulated jobs to practice quality review with AI feedback"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "sections": [
+        {
+          "name": "Profile",
+          "items": [
+            "Name",
+            "Email",
+            "Photo",
+            "Bio",
+            "Skills"
+          ]
+        },
+        {
+          "name": "Certification",
+          "items": [
+            "Current level",
+            "Renewal date",
+            "Upgrade option"
+          ]
+        },
+        {
+          "name": "Preferences",
+          "items": [
+            "Job categories",
+            "Notification settings",
+            "Language"
+          ]
+        },
+        {
+          "name": "Platform Connections",
+          "items": [
+            "Link Upwork",
+            "Link Fiverr",
+            "Link Freelancer.com"
+          ]
+        },
+        {
+          "name": "Payment Methods",
+          "items": [
+            "Bank account",
+            "PayPal",
+            "Payout preferences"
+          ]
+        },
+        {
+          "name": "Security",
+          "items": [
+            "Change password",
+            "2FA",
+            "Login history"
+          ]
+        },
+        {
+          "name": "Support",
+          "items": [
+            "Help center",
+            "Contact support",
+            "Report issue"
+          ]
+        }
+      ]
+    }
+  ],
+  "navigation": {
+    "type": "Bottom Navigation Bar",
+    "tabs": [
+      {
+        "icon": "home",
+        "label": "Home"
+      },
+      {
+        "icon": "briefcase",
+        "label": "Jobs"
+      },
+      {
+        "icon": "robot",
+        "label": "AI Agents"
+      },
+      {
+        "icon": "certificate",
+        "label": "Training"
+      },
+      {
+        "icon": "user",
+        "label": "Profile"
+      }
+    ]
+  },
+  "design_system": {
+    "primary_color": "#2563EB",
+    "secondary_color": "#7C3AED",
+    "accent_color": "#10B981",
+    "background": "#F9FAFB",
+    "text_primary": "#111827",
+    "text_secondary": "#6B7280",
+    "fonts": {
+      "heading": "Inter Bold",
+      "body": "Inter Regular",
+      "mono": "Roboto Mono"
+    },
+    "card_style": "Rounded corners (12px), subtle shadow, white background"
+  },
+  "key_features": [
+    "Real-time job discovery from 3 major platforms",
+    "AI agent orchestration and monitoring",
+    "Built-in quality review tools with drift detection",
+    "Gamified certification progression",
+    "Automated client communication",
+    "Earnings analytics and tracking",
+    "One-tap payment withdrawal",
+    "Push notifications for job opportunities",
+    "Offline module access",
+    "Multi-industry adaptability"
+  ]
+}
