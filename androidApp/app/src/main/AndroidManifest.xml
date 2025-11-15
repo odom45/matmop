@@ -12,13 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name="com.matmop.app.MainActivity"
+            android:name="com.matmop.app.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.matmop.app.AgreementActivity" />
+        <activity android:name="com.matmop.app.MainActivity" />
         <activity android:name="com.matmop.app.GalleryActivity" />
         <activity android:name="com.matmop.app.ImageViewerActivity" />
         <activity android:name="com.matmop.app.PdfViewerActivity" />

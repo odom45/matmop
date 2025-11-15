@@ -6,4 +6,12 @@
     <string name="content_webview_content_desc">Content preview</string>
     <string name="image_viewer_content_desc">Displayed image</string>
     <string name="pdf_viewer_content_desc">PDF page preview</string>
+
+    <!-- User Agreement strings -->
+    <string name="user_agreement_title">User Agreement</string>
+    <string name="user_agreement_content_desc">User Agreement content</string>
+    <string name="i_agree_checkbox">I have read and agree to the User Agreement</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="agree_required_to_continue">You must check the box to proceed</string>
 </resources>
