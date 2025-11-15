@@ -4,10 +4,13 @@ import android.graphics.Bitmap
 import android.graphics.pdf.PdfRenderer
 import android.os.Bundle
 import android.os.ParcelFileDescriptor
+import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.io.FileOutputStream
+
+private const val TAG = "PdfViewerActivity"
 
 class PdfViewerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +18,11 @@ class PdfViewerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pdf_viewer)
 
         val imageView: ImageView = findViewById(R.id.imageView)
-        val path = intent.getStringExtra("path") ?: return
+        val path = intent.getStringExtra("path")
+        if (path.isNullOrBlank()) {
+            Log.e(TAG, "Missing PDF path in intent extras")
+            return
+        }
 
         try {
             // Copy asset to a cache file because PdfRenderer needs a FileDescriptor
@@ -36,12 +43,14 @@ class PdfViewerActivity : AppCompatActivity() {
                 page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
                 imageView.setImageBitmap(bitmap)
                 page.close()
+            } else {
+                Log.w(TAG, "PDF has no pages: $fileName")
             }
 
             pdfRenderer.close()
             parcelFileDescriptor.close()
         } catch (e: Exception) {
-            e.printStackTrace()
+            Log.e(TAG, "Failed to render PDF: $path", e)
         }
     }
 }
