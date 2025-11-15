@@ -7,6 +7,13 @@ How to open and build:
 2. Let Android Studio sync Gradle and install any SDK/NDK components it requests.
 3. Build and run on an emulator or device (minSdk 21).
 
+Quick preview (Windows):
+- Right-click `androidApp\run_preview.ps1` > Run with PowerShell.
+  - It will: check adb, ensure a device/emulator is connected, build and install Debug, and launch the Splash screen.
+  - Prereqs: Android Studio installed; Android SDK platform-tools (adb) in PATH. Start an emulator from AVD Manager or connect a device with USB debugging enabled.
+- Alternative (manual):
+  - Open Android Studio > Run ▶ to deploy Debug on the selected emulator/device.
+
 Build a release App Bundle (AAB) locally:
 - Unsigned (for testing):
   - In Android Studio: Build > Build Bundle(s)/APK(s) > Build Bundle(s).
